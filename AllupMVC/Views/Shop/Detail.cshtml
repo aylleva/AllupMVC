@@ -1,0 +1,489 @@
+﻿@using AllupMVC.ViewModels
+@model DetailVM
+<!--====== Breadcrumb Part Start ======-->
+
+<div class="breadcrumb-area">
+    <div class="container-fluid custom-container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="shop-left-sidebar.html">Shop</a></li>
+                <li class="breadcrumb-item active">Product Details</li>
+            </ol>
+        </nav>
+    </div> <!-- container -->
+</div>
+
+<!--====== Breadcrumb Part Ends ======-->
+<!--====== Single Product Part Start ======-->
+
+<section class="single-product-page pt-20">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-product-image mt-30">
+                    <div class="product-single-image">
+                        @foreach(var image in Model.Product.Images){
+                            <div class="single-image">
+                                <img src="~/assets/images/@image.Image" alt="">
+                            </div>
+                        }
+                     
+                    </div>
+                    <div class="product-single-thumb-image">
+                        <ul class="product-single-thumb">
+                           @foreach(var image in Model.Product.Images){
+                                <li><img src="~/assets/images/@image.Image" alt="product"></li>
+                           }
+                           
+                        </ul>
+                    </div>
+                </div> <!-- single product image -->
+            </div>
+            <div class="col-lg-6">
+                <div class="single-product-content mt-30">
+                    <div class="tags d-flex">
+                        <span class="tag-title">Tags:</span>
+                        <ul class="tag-list media-body">
+                          @foreach(var tag in Model.Product.ProductTags){
+                                <li><a href="#">@tag.Tag.Name</a></li>
+                          }
+                           
+                        </ul>
+                    </div>
+                    <h2 class="product-title">@Model.Product.Name</h2>
+                    <div class="review-rating d-flex flex-wrap">
+                        <ul class="rating">
+                            <li class="rating-on"><i class="fas fa-star"></i></li>
+                            <li class="rating-on"><i class="fas fa-star"></i></li>
+                            <li class="rating-on"><i class="fas fa-star"></i></li>
+                            <li class="rating-on"><i class="fas fa-star"></i></li>
+                            <li class="rating-on"><i class="fas fa-star"></i></li>
+                        </ul>
+                        <ul class="review-link">
+                            <li><a href="#">(1 Review)</a></li>
+                            <li><a href="#">Write A Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-price">
+                        <span class="regular-price">@Model.Product.Price</span>
+                    </div>
+                    <div class="product-basic-info">
+                       
+                        <div class="single-info">
+                            <span class="title">Brand :</span>
+                            <span class="value"><a href="#">@Model.Product.Brand.Name</a></span>
+                        </div>
+                        <div class="single-info">
+                            <span class="title"> Product Code :</span>
+                            <span class="value">@Model.Product.ProdcutCode</span>
+                        </div>
+                        <div class="single-info">
+                            <span class="title"> Availability :</span>
+                            <span class="value">@Model.Product.Avabialability </span>
+                        </div>
+                    </div>
+                    <p>@Model.Product.Description</p>
+
+                    <div class="product-size-color-quantity">
+                        <div class="product-quantity mt-25">
+                            <h5 class="title">Quantity</h5>
+                            <div class="quantity mt-15 d-flex">
+                                <button type="button" class="sub"><i class="fal fa-minus"></i></button>
+                                <input type="text" value="1" />
+                                <button type="button" class="add"><i class="fal fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addcart">
+                        <button><i class="icon ion-bag"></i> Add to cart</button>
+                    </div>
+                    <div class="product-wishlist-compare">
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fal fa-heart"></i> Add to wishlist</a></li>
+                            <li><a href="#"><i class="fal fa-repeat"></i> Add to compare</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-share d-flex">
+                        <p>Share</p>
+                        <ul class="social media-body">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="reassurance-block">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-reassurance d-flex">
+                                    <div class="reassurance-icon">
+                                        <img src="~/assets/images/icon-1.png" alt="icon">
+                                    </div>
+                                    <div class="reassurance media-body">
+                                        <p>Security policy (edit with Customer reassurance module)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-reassurance d-flex">
+                                    <div class="reassurance-icon">
+                                        <img src="~/assets/images/icon-2.png" alt="icon">
+                                    </div>
+                                    <div class="reassurance media-body">
+                                        <p>Delivery policy (edit with Customer reassurance module)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-reassurance d-flex">
+                                    <div class="reassurance-icon">
+                                        <img src="~/assets/images/icon-3.png" alt="icon">
+                                    </div>
+                                    <div class="reassurance media-body">
+                                        <p>Return policy (edit with Customer reassurance module)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- single product content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Single Product Part Ends ======-->
+<!--====== Product Description Part Start ======-->
+
+<section class="product-description-area pt-50">
+    <div class="container-fluid custom-container">
+        <ul class="nav justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Review</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="description">
+                    <p>@Model.Product.Description</p>
+                </div> <!-- Description -->
+            </div>
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <div class="product-rating-content">
+                    <div class="average-rating">
+                        <h4 class="rating-overall">4.5 <span>(Overall)</span></h4>
+                        <p>Based on 9 Comments</p>
+                    </div>
+                    <div class="rating-list d-flex flex-wrap">
+                        <div class="single-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5)</span>
+                        </div>
+                        <div class="single-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(3)</span>
+                        </div>
+                        <div class="single-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(1)</span>
+                        </div>
+                        <div class="single-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(0)</span>
+                        </div>
+                        <div class="single-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                    <div class="rating-items">
+                        <div class="single-rating-item">
+                            <div class="rating-author d-flex flex-wrap">
+                                <h4 class="author-name">Cristopher Lee</h4>
+                                <ul class="rating-star">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><span>(5)</span></li>
+                                </ul>
+                            </div>
+                            <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli</p>
+                        </div>
+                        <div class="single-rating-item">
+                            <div class="rating-author d-flex flex-wrap">
+                                <h4 class="author-name">Hasan Mubarak</h4>
+                                <ul class="rating-star">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><span>(5)</span></li>
+                                </ul>
+                            </div>
+                            <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli</p>
+                        </div>
+                        <div class="single-rating-item">
+                            <div class="rating-author d-flex flex-wrap">
+                                <h4 class="author-name">Rashed Mahmud</h4>
+                                <ul class="rating-star">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><span>(5)</span></li>
+                                </ul>
+                            </div>
+                            <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli</p>
+                        </div>
+                    </div>
+
+                    <div class="rating-form">
+                        <h4 class="form-title">Add your Comments</h4>
+
+                        <form action="#">
+                            <div class="rating-star d-flex">
+                                <span class="title">Rating:</span>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Name:</label>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Email:</label>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-form">
+                                        <label>Your Review:</label>
+                                        <textarea placeholder="Write a review"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-form">
+                                        <button class="main-btn">Add Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- Rating Content -->
+            </div>
+        </div> <!-- tab-content -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Product Description Part Ends ======-->
+<!--====== Product Part Start ======-->
+
+<section class="product-area pt-100">
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-30">
+                    <h2 class="title">Featured Categories</h2>
+                </div>
+            </div>
+        </div> <!-- row -->
+        @await Component.InvokeAsync("Product",AllupMVC.Utilities.Enums.SortType.Name)
+               
+            </div> <!-- row -->
+        </div> <!-- product items -->
+    </div>
+</section>
+
+<!--====== Product Part Ends ======-->
+<!--====== Product Part Start ======-->
+
+<section class="product-area pt-100">
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-30">
+                    <h2 class="title">Featured Categories</h2>
+                </div>
+            </div>
+        </div> <!-- row -->
+        @await Component.InvokeAsync("Product", AllupMVC.Utilities.Enums.SortType.Price)
+            </div> <!-- row -->
+        </div> <!-- product items -->
+    </div>
+</section>
+
+<!--====== Product Part Ends ======-->
+<!--====== Brand Part Start ======-->
+
+<div class="brand-area pt-80">
+    <div class="container-fluid custom-container">
+        <div class="row brand-active">
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-1.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-2.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-3.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-5.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-6.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+
+<!--====== Brand Part Ends ======-->
+<!--====== Features Banner Part Start ======-->
+
+<section class="features-banner-area pt-80 pb-100">
+    <div class="container-fluid custom-container">
+        <div class="features-banner-wrapper d-flex flex-wrap">
+            <div class="single-features-banner d-flex">
+                <div class="banner-icon">
+                    <img src="~/assets/images/banner-icon/icon1.png" alt="Icon">
+                </div>
+                <div class="banner-content media-body">
+                    <h3 class="banner-title">Free Shipping</h3>
+                    <p>Free shipping on all US order</p>
+                </div>
+            </div> <!-- single features banner -->
+            <div class="single-features-banner d-flex">
+                <div class="banner-icon">
+                    <img src="~/assets/images/banner-icon/icon2.png" alt="Icon">
+                </div>
+                <div class="banner-content media-body">
+                    <h3 class="banner-title">Support 24/7</h3>
+                    <p>Contact us 24 hours a day</p>
+                </div>
+            </div> <!-- single features banner -->
+            <div class="single-features-banner d-flex">
+                <div class="banner-icon">
+                    <img src="~/assets/images/banner-icon/icon3.png" alt="Icon">
+                </div>
+                <div class="banner-content media-body">
+                    <h3 class="banner-title">100% Money Back</h3>
+                    <p>You have 30 days to Return</p>
+                </div>
+            </div> <!-- single features banner -->
+            <div class="single-features-banner d-flex">
+                <div class="banner-icon">
+                    <img src="~/assets/images/banner-icon/icon4.png" alt="Icon">
+                </div>
+                <div class="banner-content media-body">
+                    <h3 class="banner-title">90 Days Return</h3>
+                    <p>If goods have problems</p>
+                </div>
+            </div> <!-- single features banner -->
+            <div class="single-features-banner d-flex">
+                <div class="banner-icon">
+                    <img src="~/assets/images/banner-icon/icon5.png" alt="Icon">
+                </div>
+                <div class="banner-content media-body">
+                    <h3 class="banner-title">Payment Secure</h3>
+                    <p>We ensure secure payment</p>
+                </div>
+            </div> <!-- single features banner -->
+        </div> <!-- features banner wrapper -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Features Banner Part Ends ======-->
+<!--====== Newsletter Part Start ======-->
+
+<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(assets/images/bg-newletter.jpg)">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-8">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Subscribe our newsletter</h2>
+                    <p>allup is a powerful eCommerce HTML Template</p>
+
+                    <div class="newsletter-forn">
+                        <form action="#">
+                            <input type="text" placeholder="Your Email address">
+                            <button class="main-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div> <!-- newsletter content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Newsletter Part Ends ======-->

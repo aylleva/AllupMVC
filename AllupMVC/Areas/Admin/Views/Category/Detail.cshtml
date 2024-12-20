@@ -1,0 +1,17 @@
+﻿@using AllupMVC.Models
+@model  Category
+
+@foreach(var product in Model.Products){
+    <div class="card"  style="width: 18rem; display:flex">
+        <img src="~/assets/images/product/@product.Images.FirstOrDefault(i=>i.IsPrimary==true).Image" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@product.Name</h5>
+            <p class="card-text">Price:€@product.Price</p>
+            <p class="card-text">Product Code:@product.ProdcutCode</p>
+            <p class="card-text">Is Avabialability:@product.Avabialability</p>
+            <p class="card-text">@product.Description</p>
+
+        </div>
+    </div>
+
+}
