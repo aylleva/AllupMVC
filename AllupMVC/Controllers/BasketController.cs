@@ -1,5 +1,6 @@
 ﻿using AllupMVC.DAL;
 using AllupMVC.Models;
+using AllupMVC.Services.Interfaces;
 using AllupMVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -15,12 +16,13 @@ namespace AllupMVC.Controllers
     {
         private readonly AppDBContext _context;
         private readonly UserManager<AppUser> _usermanager;
+        private readonly IBasketService _basketservice;
 
-
-        public BasketController(AppDBContext context,UserManager<AppUser> usermanager)
+        public BasketController(AppDBContext context,UserManager<AppUser> usermanager,IBasketService basketservice)
         {
             _context = context;
             _usermanager = usermanager;
+            _basketservice = basketservice;
         }
         public async Task<IActionResult> Index()
         {
@@ -132,7 +134,12 @@ namespace AllupMVC.Controllers
             }
            
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(nameof(Getbasket));
+        }
+
+        public async Task<IActionResult> Getbasket()
+        {
+            return PartialView("BasketPartialView", await _basketservice.GetBasketAsync());
         }
 
         public async Task<IActionResult> Delete(int? id)

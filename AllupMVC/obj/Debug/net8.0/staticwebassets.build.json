@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CeXIu1I1vKf82+s3Y2inWk8z8pplA1D+ba+20M2GGIA=",
+  "Hash": "ahQ9/ZxG3SDVGTVqWLmIjkhDDNxamC8G8tlBrnr7k6w=",
   "Source": "AllupMVC",
   "BasePath": "_content/AllupMVC",
   "Mode": "Default",
@@ -3419,6 +3419,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-6.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg",
+      "SourceId": "AllupMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\",
+      "BasePath": "_content/AllupMVC",
+      "RelativePath": "assets/images/c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8423q2kobo",
+      "Integrity": "iPDPj7tonjjBuS3jvVhvM0xfsPNYf4TWg4ggVhF4QQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\category-1.jpg",
       "SourceId": "AllupMVC",
       "SourceType": "Discovered",
@@ -3711,27 +3732,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\custom_banner.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg",
-      "SourceId": "AllupMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\",
-      "BasePath": "_content/AllupMVC",
-      "RelativePath": "assets/images/f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ocnebpl8m0",
-      "Integrity": "SFMdc7lZmi2x2txDRo7W577+iqRprvo+z0fcfw8ZdZM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\favicon.png",
@@ -18322,6 +18322,88 @@
       ]
     },
     {
+      "Route": "assets/images/c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.8423q2kobo.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPDPj7tonjjBuS3jvVhvM0xfsPNYf4TWg4ggVhF4QQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 15:22:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8423q2kobo"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iPDPj7tonjjBuS3jvVhvM0xfsPNYf4TWg4ggVhF4QQc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg",
+      "AssetFile": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPDPj7tonjjBuS3jvVhvM0xfsPNYf4TWg4ggVhF4QQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 15:22:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iPDPj7tonjjBuS3jvVhvM0xfsPNYf4TWg4ggVhF4QQc="
+        }
+      ]
+    },
+    {
       "Route": "assets/images/category-1.0hq3wps7bq.jpg",
       "AssetFile": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\category-1.jpg",
       "Selectors": [],
@@ -19466,88 +19548,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-hvw83QwqceDTFoS8bz2ObMQ8xbjT4RzRRXLbMbduj9Q="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2471"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SFMdc7lZmi2x2txDRo7W577+iqRprvo+z0fcfw8ZdZM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 15:45:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SFMdc7lZmi2x2txDRo7W577+iqRprvo+z0fcfw8ZdZM="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.ocnebpl8m0.jpg",
-      "AssetFile": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2471"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SFMdc7lZmi2x2txDRo7W577+iqRprvo+z0fcfw8ZdZM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 15:45:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ocnebpl8m0"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SFMdc7lZmi2x2txDRo7W577+iqRprvo+z0fcfw8ZdZM="
         }
       ]
     },

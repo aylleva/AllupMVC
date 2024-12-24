@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\product\\createproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\product\\createproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\views\\shared\\components\\product\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shared\\components\\product\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\desktop\\mvc projects\\allupmvc\\allupmvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7A5076-4183-4C11-A0B1-3D22ADC4ECE0}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AllupMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AllupMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAuwNMAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T07:40:24.203Z",
+              "DocumentIndex": 0,
+              "Title": "CreateProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Product\\CreateProductVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Product\\CreateProductVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Product\\CreateProductVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Product\\CreateProductVM.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T06:54:32.94Z",
               "EditorCaption": ""
             },
             {
@@ -47,39 +39,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shop\\Index.cshtml",
-              "RelativeDocumentMoniker": "AllupMVC\\Views\\Shop\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shop\\Index.cshtml",
-              "RelativeToolTip": "AllupMVC\\Views\\Shop\\Index.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T07:27:29.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "RelativeDocumentMoniker": "AllupMVC\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "RelativeToolTip": "AllupMVC\\Views\\Shared\\Components\\Product\\Default.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T07:26:52.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "AllupMVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "AllupMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAANsDAAAAdFkDb6gYwPIDAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T07:23:37.662Z",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwEUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T06:51:38.163Z",
               "EditorCaption": ""
             }
           ]

@@ -29,7 +29,7 @@
                         <a data-animation="zoomIn"
                            data-delay="0.5s"
                            class="main-btn"
-                           href="single-product.html">Shop Now</a>
+                          asp-controller="shop" asp-action="detail">Shop Now</a>
                     </div>
                 </div>
                 <!-- container -->
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="banner-image">
-                    <a href="shop-4-column.html">
+                    <a asp-controller="shop" asp-action="detail">
                         <img src="~/assets/images/banner-1.png" alt="banner" />
                     </a>
                 </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-6">
                 <div class="banner-image">
-                    <a href="shop-4-column.html">
+                    <a asp-controller="shop" asp-action="detail">
                         <img src="~/assets/images/banner-2.png" alt="banner" />
                     </a>
                 </div>
@@ -1004,11 +1004,16 @@
 
            $.ajax({
                type:"GET",
-               url:"endpoint"
+               url:endpoint
            }).done(data=>{
 
-                 var cart=document.querySelector("#minicart")
+                 var cart=document.querySelector(".mini-cart")
                  cart.innerHTML=data
+
+                 var basketcount=document.querySelector("#basket-count").value
+                 var quantities=document.querySelectorAll(".cus-quantity")
+
+                 quantities.forEach(q=>q.innerHTML=basketcount)
            })
 
        })

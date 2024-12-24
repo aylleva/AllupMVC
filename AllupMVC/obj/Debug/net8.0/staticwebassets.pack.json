@@ -649,6 +649,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\brand\\brand-6.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\c5a13983-8351-4f1a-acec-7d7fbfa60f2acategory-3.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\category-1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\category-1.jpg"
     },
@@ -703,10 +707,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\custom_banner.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\custom_banner.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\f2cd6092-9b94-4f03-80c3-5ca7ef181aefcategory-10.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\MVC projects\\AllupMVC\\AllupMVC\\wwwroot\\assets\\images\\favicon.png",

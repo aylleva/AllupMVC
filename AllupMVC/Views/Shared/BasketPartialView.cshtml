@@ -1,0 +1,62 @@
+﻿@model List<BasketitemVM>
+@{
+	decimal total = 0;
+}
+<div class="mini-cart">
+	<ul class="cart-items">
+		@foreach (var item in Model)
+		{
+			total += item.SubTotal;
+			<li>
+				<div class="single-cart-item d-flex">
+					<div class="cart-item-thumb">
+						<a href="single-product.html">
+							<img src="~/assets/images/@item.Image"
+								 alt="product" />
+						</a>
+						<span class="product-quantity">@item.Count x</span>
+					</div>
+					<div class="cart-item-content media-body">
+						<h5 class="product-name">
+							<a asp-controller="shop" asp-action="detail" asp-route-id="@item.ProductId">@item.Name</a>
+						</h5>
+						<span class="product-price">€@item.Price</span>
+						<a asp-controller="basket" asp-action="delete" asp-route-id="@item.ProductId" class="product-close">
+							<i class="fal fa-times"></i>
+						</a>
+					</div>
+				</div>
+			</li>
+		}
+
+	</ul>
+	<div class="price_content">
+		<div class="cart-total price_inline">
+			<span class="label">Total</span>
+			<span class="value">€@total</span>
+		</div>
+	</div>
+	<!-- price content -->
+	@if (Model.Count == 0)
+	{
+		<p class="text-danger">Your Basket Is Empty! Shop Now!</p>
+
+		<div class="checkout text-center">
+			<a asp-controller="shop" asp-action="index" class="main-btn">Shop Now!</a>
+		</div>
+
+	}
+	else
+	{
+		<div>
+			<div class="checkout text-center">
+				<a asp-controller="basket" asp-action="index" class="main-btn">View Cart</a>
+			</div>
+			<div class="checkout text-center">
+				<a asp-controller="basket" asp-action="checkout" class="main-btn">Checkout</a>
+			</div>
+		</div>
+	}
+	<!-- mini cart -->
+</div>
+<input type="hidden" id="basket-count" value="@Model.Count">
